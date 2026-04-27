@@ -8,13 +8,13 @@ Rather than building a complete processor at once, the system is developed in in
 
 The CPU is built in the following stages:
 
-🔹 Stage 1: Single-Cycle CPU
+- Stage 1: Single-Cycle CPU
 ALU (Arithmetic Logic Unit)
 Register File (32 × 32-bit)
 Control Unit
 Instruction & Data Memory Interface
 Executes one instruction per clock cycle
-🔹 Stage 2: 5-Stage Pipeline
+- Stage 2: 5-Stage Pipeline
 Instruction Fetch (IF)
 Instruction Decode (ID)
 Execute (EX)
@@ -26,18 +26,18 @@ Enhancements:
 Hazard Detection Unit
 Data Forwarding (Bypassing)
 Basic Control Hazard Handling
-🔹 Stage 3: Performance Optimization
+- Stage 3: Performance Optimization
 Pipeline efficiency improvements
 Stall minimization
 Instruction throughput analysis
-🔹 Stage 4: Custom Hardware Accelerator
+- Stage 4: Custom Hardware Accelerator
 
 A MAC (Multiply-Accumulate) unit is integrated via a custom instruction.
 
 Enables efficient vector/dot-product operations
 Demonstrates hardware-software co-design
 Used for signal processing / compute workloads
-🔹 Stage 5: Memory Hierarchy (Cache)
+- Stage 5: Memory Hierarchy (Cache)
 Direct-mapped cache implementation
 Hit/miss detection logic
 Reduced memory access latency
@@ -46,31 +46,31 @@ Reduced memory access latency
 
 The system is analyzed through:
 
-Functional simulation (Verilator)
-Waveform debugging (GTKWave)
-Performance comparison:
-Single-cycle vs Pipelined
-With vs Without MAC accelerator
+-Functional simulation (Verilator)
+-Waveform debugging (GTKWave)
+-Performance comparison:
+-Single-cycle vs Pipelined
+-With vs Without MAC accelerator
 
 ## Hardware Perspective (Optional)
 
 Selected modules (ALU / MAC) are synthesized to evaluate:
 
-Timing
-Area
-Design constraints
+-Timing
+-Area
+-Design constraints
 
 ## Learning Objectives
 
 This project demonstrates practical understanding of:
 
-Datapath and control design
-Instruction set architecture (RV32I)
-Pipelining and hazards
-Custom ISA extensions
-Memory hierarchy (cache)
-Hardware/software co-design
-Performance vs complexity trade-offs
+-Datapath and control design
+-Instruction set architecture (RV32I)
+-Pipelining and hazards
+-Custom ISA extensions
+-Memory hierarchy (cache)
+-Hardware/software co-design
+-Performance vs complexity trade-offs
 
 ##  How to Run
 
