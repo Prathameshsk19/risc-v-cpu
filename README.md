@@ -46,31 +46,31 @@ Reduced memory access latency
 
 The system is analyzed through:
 
--Functional simulation (Verilator)
--Waveform debugging (GTKWave)
--Performance comparison:
--Single-cycle vs Pipelined
--With vs Without MAC accelerator
+- Functional simulation (Verilator)
+- Waveform debugging (GTKWave)
+- Performance comparison:
+- Single-cycle vs Pipelined
+- With vs Without MAC accelerator
 
 ## Hardware Perspective (Optional)
 
 Selected modules (ALU / MAC) are synthesized to evaluate:
 
--Timing
--Area
--Design constraints
+- Timing
+- Area
+- Design constraints
 
 ## Learning Objectives
 
 This project demonstrates practical understanding of:
 
--Datapath and control design
--Instruction set architecture (RV32I)
--Pipelining and hazards
--Custom ISA extensions
--Memory hierarchy (cache)
--Hardware/software co-design
--Performance vs complexity trade-offs
+- Datapath and control design
+- Instruction set architecture (RV32I)
+- Pipelining and hazards
+- Custom ISA extensions
+- Memory hierarchy (cache)
+- Hardware/software co-design
+- Performance vs complexity trade-offs
 
 ##  How to Run
 
